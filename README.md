@@ -6,7 +6,7 @@
     <title>TypeSprinter - World Challenge</title>
     <style>
         /* ==========================================================================
-           MODERN CARBON DECOR & LAYOUT (MONKEYTYPE STYLE)
+          LAY-OUT
            ========================================================================== */
         
         :root {
@@ -122,7 +122,7 @@
 
         #hidden-input { position: absolute; opacity: 0; z-index: -1; }
 
-        /* 3. MODERN SCOREBORD INTERFACE */
+        /* 3.  SCOREBORD INTERFACE */
         .leaderboard-section {
             background-color: var(--panel-bg);
             border: 1px solid var(--border-color);
@@ -240,13 +240,49 @@
        ========================================================================== */ -->
     <script>
         const languageDatabase = {
-            nl: ["succes komt naar degenen die elke dag blijven typen und nooit stoppen", "bouw een kwalitatieve database en geniet van mooie momenten met je gezin"],
-            en: ["success comes to those who keep typing every single day and never stop", "build a high quality database and enjoy beautiful moments with your family"],
-            zh: ["成功属于那些每天坚持打字且永不停止的人", "建立高质量的数据库并与家人一起享受美好时光"],
-            ja: ["毎日タイピングを続け決して諦めない人に成功は訪れます", "高品質なデータベースを構築して家族との素晴らしい時間を楽しんでください"],
-            ko: ["매일 멈추지 않고 타자를 계속 치는 사람에게 성공이 찾아옵니다", "고품질 데이터베이스를 구축하고 가족과 함께 행복한 시간을 보내세요"],
-            ru: ["успех приходит к тем кто продолжает печатать каждый день без остановки", "создайте качественную базу данных и наслаждайтесь прекрасными моментами с семьей"]
-        };
+    nl: [
+        "succes komt naar degenen die elke dag blijven typen en nooit stoppen",
+        "bouw een kwalitatieve database en geniet van mooie momenten met je gezin",
+        "wie is de snelste typist van de klas laat je vingers vliegen over het toetsenbord",
+        "versla al je collegas op kantoor en claim de eerste plek op het scorebord",
+        "een snelle sprinter maakt geen fouten focus op de letters en pak die highscore"
+    ],
+    en: [
+        "success comes to those who keep typing every single day and never stop",
+        "build a high quality database and enjoy beautiful moments with your family",
+        "may the force be with you during this ultimate typing speed challenge",
+        "why so serious focus on the keys and destroy your classmates highscore",
+        "stay hungry stay foolish and keep practicing your muscle memory every day"
+    ],
+    zh: [
+        "成功属于那些每天坚持打字且永不停止的人",
+        "建立高质量的数据库并与家人一起享受美好时光",
+        "谁是班里打字最快的人让你的手指在键盘上飞舞吧",
+        "击败办公室里的所有同事并在排行榜上夺得第一名",
+        "速度快的冲刺手不会犯错专注于字母并拿下最高分"
+    ],
+    ja: [
+        "毎日タイピングを続け決して諦めない人に成功は訪れます",
+        "高品質なデータベースを構築して家族との素晴らしい時間を楽しんでください",
+        "クラスで一番速いタイピストは誰だキーボードの上で指を走らせろ",
+        "オフィスの同僚を全員打ち負かしてスコアボードの1位を勝ち取れ",
+        "スプリンターはミスをしない文字に集中してハイスコアを狙え"
+    ],
+    ko: [
+        "매일 멈추지 않고 타자를 계속 치는 사람에게 성공이 찾아옵니다",
+        "고품질 데이터베이스를 구축하고 가족과 함께 행복한 시간을 보내세요",
+        "우리 반에서 가장 빠른 타자는 누구인가 키보드 위에서 손가락을 날려라",
+        "사무실의 모든 동료들을 제치고 점수판의 일등을 차지해보세요",
+        "빠른 스프린터는 실수를 하지 않는다 글자에 집중하고 최고 기록을 깨라"
+    ],
+    ru: [
+        "успех приходит к тем кто продолжает печатать каждый день без остановки",
+        "создайте качественную базу данных и наслаждайтесь прекрасными моментами с семьей",
+        "кто самый быстрый наборщик в классе пусть твои пальцы летают по клавиатуре",
+        "победи всех своих коллег в офисе и займи первое место на доске почета",
+        "быстрый спринтер не делает ошибок сосредоточься на буквах и забери рекорд"
+    ]
+};
 
         // Dummy data voor de directe hype-ervaring vanavond
         const mockScores = {

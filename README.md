@@ -30,7 +30,7 @@
             overflow-x: hidden;
         }
 
-        /* 1. ADVERTENTIE ZONE BOVENIN (De Geldmaker) */
+        /* 1. ADVERTISING */
         .top-ad-zone {
             background-color: var(--panel-bg);
             padding: 10px 0;
@@ -223,7 +223,6 @@
             <button class="next-btn" onclick="resetTest()">Sprint Again &rarr;</button>
         </div>
 
-        <!-- COMPETITIE SCOREBORD (DE HYPE MOTOR) -->
         <div class="leaderboard-section">
             <div class="tabs">
                 <button class="tab-btn active" onclick="switchTab('school')">Schools</button>
